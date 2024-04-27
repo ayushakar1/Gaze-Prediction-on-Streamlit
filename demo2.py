@@ -101,7 +101,7 @@ def gazePrediction(img):
             # Visualize output
             frame = render(frame, results)
             # return frame
-            return av.VideoFrame.from_ndarray(frame)
+            return av.VideoFrame.from_ndarray(frame, format="bgr24")
 
 
 
